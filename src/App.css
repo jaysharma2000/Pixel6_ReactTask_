@@ -1,0 +1,213 @@
+#root {
+  max-width: 1280px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* styles for header section */
+.container{
+  border: 1px solid rgb(220, 217, 217);
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  margin-top: 5px;
+  overflow-x: auto; 
+}   
+
+.header-section{ 
+  background-color: #f8f9fa;
+  padding: 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-icon{
+  color: rgb(211, 25, 25);
+  font-size: 1.8rem;
+}
+ 
+.filter-section{
+  display: flex;
+  gap: 1.45rem;
+}
+
+.gender-filter-button{
+  padding: 0.5rem 0.5rem;
+  border: 1px solid rgb(172, 170, 170);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 7.5rem;
+  font-size: 1rem;
+  appearance: none;
+}
+
+.country-filter-button{
+  padding: 0.5rem 0.5rem;
+  border: 1px solid rgb(172, 170, 170);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 7.5rem;
+  font-size: 1rem;
+  appearance: none;
+}
+
+.select-container{
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+.downarrow2{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; 
+  color: rgb(189, 30, 30);
+}
+
+
+/* Table styling */
+.table-section img {
+  max-width: 50px; 
+  border-radius: 50%; 
+}
+
+.table-section {
+  width: 90%;
+  margin: 0 auto; 
+  overflow-x: auto; 
+  padding: 20px 0; 
+}
+
+.table-section table {
+  border-collapse: collapse; 
+  width: 100%; 
+  table-layout: fixed; 
+  border-radius: 8px; 
+  overflow: hidden; 
+}
+
+/* table Header section styling */
+.table-section th {
+  background-color: #f4f4f4; 
+  padding: 12px; 
+  text-align: left; 
+  border-top: 1px solid #ddd; 
+  border-bottom: 1px solid #ddd; 
+  white-space: nowrap; 
+}
+
+
+/* table data section styling */
+.table-section td {
+  padding: 12px; 
+  text-align: left; 
+  border-top: 1px solid #ddd; 
+  border-bottom: 1px solid #ddd; 
+  white-space: nowrap; 
+  overflow: hidden; 
+}
+
+.table-section img {
+  max-width: 50px; 
+  border-radius: 50%; 
+}
+
+/* media queries for responsive design */
+@media (max-width: 768px) {
+  .table-section th, .table-section td {
+    font-size: 14px; 
+  }
+}
+
+
+/* Styling for all columns width */
+.table-section th:nth-child(1), .table-section td:nth-child(1) {
+  width: 6%; 
+}
+
+.table-section th:nth-child(2), .table-section td:nth-child(2) {
+  width: 8%; 
+}
+
+.table-section th:nth-child(3), .table-section td:nth-child(3) {
+  width: 20%; 
+}
+
+.table-section th:nth-child(4), .table-section td:nth-child(4) {
+  width: 10%; 
+}
+
+.table-section th:nth-child(5), .table-section td:nth-child(5) {
+  width: 15%; 
+}
+
+.table-section th:nth-child(6), .table-section td:nth-child(6) {
+  width: 15%; 
+}
+
+.table-section th svg {
+  cursor: pointer; 
+  margin-left: 5px; 
+}
+
+/* styles for pagination buttons */
+.button-section{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+.button-section p{
+  font-weight: 600;
+}
+
+.button-section button{
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  border: none;
+  background-color: #dc2626;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Loader */
+.spinner {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 6px solid #cb3922;
+  margin: 30% auto;
+  animation:
+    l20-1 0.8s infinite linear alternate,
+    l20-2 1.6s infinite linear;
+}
+@keyframes l20-1{
+   0%    {clip-path: polygon(50% 50%,0       0,  50%   0%,  50%    0%, 50%    0%, 50%    0%, 50%    0% )}
+   12.5% {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100%   0%, 100%   0%, 100%   0% )}
+   25%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 100% 100%, 100% 100% )}
+   50%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+   62.5% {clip-path: polygon(50% 50%,100%    0, 100%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+   75%   {clip-path: polygon(50% 50%,100% 100%, 100% 100%,  100% 100%, 100% 100%, 50%  100%, 0%   100% )}
+   100%  {clip-path: polygon(50% 50%,50%  100%,  50% 100%,   50% 100%,  50% 100%, 50%  100%, 0%   100% )}
+}
+@keyframes l20-2{ 
+  0%    {transform:scaleY(1)  rotate(0deg)}
+  49.99%{transform:scaleY(1)  rotate(135deg)}
+  50%   {transform:scaleY(-1) rotate(0deg)}
+  100%  {transform:scaleY(-1) rotate(-135deg)}
+}
+
