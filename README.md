@@ -1,8 +1,20 @@
-# React + Vite
+#Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#Description
 
-Currently, two official plugins are available:
+   This project is a React application that displays employees data in a sortable, filterable table format.
+   
+   Features include:
+       1. Sorting by different columns (ID, Full Name) in ascending and descending order.
+       2. Filtering users by state and gender.
+       3. Pagination: Use the "Previous Page" and "Next Page" buttons to navigate through the pages of data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Initial Setup
+1. git clone https://github.com/jaysharma2000/Pixel6_ReactTask_.git
+2. cd Pixel6_ReactTask.
+3. npm install
+4. npm i react-icons
+5. npm run dev
+
+
+       
